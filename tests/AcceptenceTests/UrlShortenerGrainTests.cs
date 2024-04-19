@@ -6,7 +6,7 @@ using UnitTests.Fixtures;
 using UrlShortenerWithOrleans.Interfaces;
 using UrlShortenerWithOrleans.Services;
 
-namespace UnitTests
+namespace AcceptanceTests
 {
     [Collection(ClusterCollection.Name)]
     public class UrlShortenerGrainTests(ClusterFixture fixture)

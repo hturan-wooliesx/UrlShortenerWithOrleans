@@ -12,7 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddTransient<IUrlService, UrlService>();
 builder.Services.AddTransient<IAuthenticationService, AuthenticationService>();
-//builder.Services.AddTransient<RequestContextPopulatorMiddleware>();
+builder.Services.AddTransient<RequestContextPopulatorMiddleware>();
 
 var jwtIssuer = builder.Configuration.GetSection("Jwt:Issuer").Get<string>() ?? "cannot read jwt issuer";
 var jwtKey = builder.Configuration.GetSection("Jwt:Key").Get<string>() ?? "cannot read jwt key";
@@ -45,7 +45,6 @@ builder.Host.UseOrleans(siloBuilder =>
 
     siloBuilder.AddIncomingGrainCallFilter<AuthenticationGrainFilter>();
     // builder.Services.AddSingleton<IIncomingGrainCallFilter, AuthenticationGrainFilter>();
-    siloBuilder.Services.AddTransient<RequestContextPopulatorMiddleware>();
 
     siloBuilder.UseDashboard(options =>
     {
