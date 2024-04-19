@@ -1,0 +1,145 @@
+﻿[2024-03-15 03:04:11.587 GMT 10	Information	100404	Orleans.Runtime.Silo]	Silo starting with GC settings: ServerGC=False GCLatencyMode=Interactive	
+[2024-03-15 03:04:11.587 GMT 10	Warning	100405	Orleans.Runtime.Silo]	Note: Silo not running with ServerGC turned on - recommend checking app config : <configuration>-<runtime>-<gcServer enabled="true">	
+[2024-03-15 03:04:11.587 GMT 10	Warning	100405	Orleans.Runtime.Silo]	Note: ServerGC only kicks in on multi-core systems (settings enabling ServerGC have no effect on single-core machines).	
+[2024-03-15 03:04:11.587 GMT 10	Information	100403	Orleans.Runtime.Silo]	-------------- Initializing silo on host A407SO235BW2W MachineName A407SO235BW2W at 127.0.0.1:27801, gen 69476651 --------------	
+[2024-03-15 03:04:11.587 GMT 10	Information	100415	Orleans.Runtime.Silo]	Starting silo Secondary_1	
+[2024-03-15 03:04:11.592 GMT 10	Information	100422	Orleans.Runtime.Silo]	-------------- Started silo S127.0.0.1:27801:69476651, ConsistentHashCode F7842E7E --------------	
+[2024-03-15 03:04:11.605 GMT 10	Information	0	Orleans.Hosting.SiloHostedService]	Starting Orleans Silo.	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.ActivationCountBasedPlacementOptions: 
+ChooseOutOf: 2
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.AdoNetGrainStorageOptions-urls: 
+ConnectionString: REDACTED
+InitStage: 10000
+Invariant: System.Data.SqlClient
+GrainStorageSerializer: Orleans.Storage.JsonGrainStorageSerializer
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.ClusterMembershipOptions: 
+NumMissedTableIAmAliveLimit: 2
+LivenessEnabled: True
+ProbeTimeout: 00:00:05
+TableRefreshTimeout: 00:01:00
+DeathVoteExpirationTimeout: 00:02:00
+IAmAliveTablePublishTimeout: 00:05:00
+MaxJoinAttemptTime: 00:05:00
+UseLivenessGossip: True
+NumProbedSilos: 3
+NumMissedProbesLimit: 3
+NumVotesForDeathDeclaration: 2
+DefunctSiloExpiration: 7.00:00:00
+DefunctSiloCleanupPeriod: 01:00:00
+LocalHealthDegradationMonitoringPeriod: 00:00:10
+ExtendProbeTimeoutDuringDegradation: True
+EnableIndirectProbes: True
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.ClusterOptions: 
+ClusterId: testcluster-2024-03-15t03-04-10-52
+ServiceId: 85160ae63b054843bc5cbc0c7a572510
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.ConnectionOptions: 
+ProtocolVersion: Version1
+ConnectionsPerEndpoint: 1
+ConnectionRetryDelay: 00:00:01
+OpenConnectionTimeout: 00:00:05
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.ConsistentRingOptions: 
+NumVirtualBucketsConsistentRing: 30
+UseVirtualBucketsConsistentRing: True
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.DevelopmentClusterMembershipOptions: 
+PrimarySiloEndpoint: 127.0.0.1:27801
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.EndpointOptions: 
+AdvertisedIPAddress: 127.0.0.1
+SiloPort: 27801
+GatewayPort: 40056
+SiloListeningEndpoint: 127.0.0.1:27801
+GatewayListeningEndpoint: 127.0.0.1:40056
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.GrainCollectionOptions: 
+CollectionQuantum: 00:01:00
+CollectionAge: 00:15:00
+ActivationTimeout: 00:00:30
+DeactivationTimeout: 00:00:30
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.GrainDirectoryOptions: 
+CachingStrategy: Adaptive
+CacheSize: 1000000
+InitialCacheTTL: 00:00:30
+MaximumCacheTTL: 00:04:00
+CacheTTLExtensionFactor: 2
+LazyDeregistrationDelay: 00:01:00
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.GrainVersioningOptions: 
+DefaultCompatibilityStrategy: BackwardCompatible
+DefaultVersionSelectorStrategy: AllCompatibleVersions
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.LoadSheddingOptions: 
+LoadSheddingEnabled: False
+LoadSheddingLimit: 95
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.SchedulingOptions: 
+DelayWarningThreshold: 00:00:10
+ActivationSchedulingQuantum: 00:00:00.1000000
+TurnWarningLengthThreshold: 00:00:01
+MaxPendingWorkItemsSoftLimit: 0
+StoppedActivationWarningInterval: 00:01:00
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.SiloMessagingOptions: 
+SiloSenderQueues: 0
+GatewaySenderQueues: 0
+MaxForwardCount: 2
+ClientDropTimeout: 00:01:00
+ClientRegistrationRefresh: 00:05:00
+ClientGatewayShutdownNotificationTimeout: 00:00:05
+MaxEnqueuedRequestsSoftLimit: 0
+MaxEnqueuedRequestsHardLimit: 0
+MaxEnqueuedRequestsSoftLimit_StatelessWorker: 0
+MaxEnqueuedRequestsHardLimit_StatelessWorker: 0
+MaxRequestProcessingTime: 02:00:00
+AssumeHomogenousSilosForTesting: False
+ShutdownRerouteTimeout: 00:00:10
+SystemResponseTimeout: 00:00:30
+GrainWorkloadAnalysisPeriod: 00:00:05
+RequestProcessingWarningTime: 00:00:05
+RequestQueueDelayWarningTime: 00:00:10
+WaitForMessageToBeQueuedForOutboundTime: 00:00:02
+ResponseTimeout: 00:00:30
+ResponseTimeoutWithDebugger: 00:30:00
+DropExpiredMessages: True
+MaxMessageHeaderSize: 10485760
+MaxMessageBodySize: 104857600
+	
+[2024-03-15 03:04:11.607 GMT 10	Information	0	Orleans.Runtime.SiloOptionsLogger]	Configuration Orleans.Configuration.SiloOptions: 
+SiloName: Secondary_1
+	
+[2024-03-15 03:04:11.607 GMT 28	Information	100401	Orleans.Runtime.Silo]	Silo Start()	
+[2024-03-15 03:04:11.608 GMT 10	Information	100452	Orleans.Runtime.Silo]	Start local grain directory took 0 milliseconds to finish	
+[2024-03-15 03:04:11.609 GMT 10	Information	100452	Orleans.Runtime.Silo]	Init grain services took 0 milliseconds to finish	
+[2024-03-15 03:04:11.609 GMT 35	Information	100603	Orleans.Runtime.MembershipService.MembershipTableManager]	MembershipOracle starting on host A407SO235BW2W with SiloAddress S127.0.0.1:27801:69476651 at 2024-03-15 03:04:11.543 GMT	
+[2024-03-15 03:04:11.609 GMT 35	Information	100635	Orleans.Runtime.MembershipService.SystemTargetBasedMembershipTable]	Creating in-memory membership table	
+[2024-03-15 03:04:11.609 GMT 27	Information	100452	Orleans.Runtime.Silo]	Start deployment load collector took 0 milliseconds to finish	
+[2024-03-15 03:04:11.609 GMT 35	Information	100637	Orleans.Runtime.MembershipService.MembershipTableSystemTarget]	GrainBasedMembershipTable Activated.	
+[2024-03-15 03:04:11.610 GMT 28	Information	100631	Orleans.Runtime.MembershipService.SystemTargetBasedMembershipTable]	Connected to membership table provider.	
+[2024-03-15 03:04:11.611 GMT 28	Information	100663	Orleans.Runtime.MembershipService.MembershipAgent]	Joining	
+[2024-03-15 03:04:11.614 GMT 28	Information	200409	Orleans.Storage.AdoNetGrainStorage]	Initialized storage provider: ServiceId=85160ae63b054843bc5cbc0c7a572510 ProviderName=urls Invariant=System.Data.SqlClient ConnectionString=Data Source=localhost\MSSQLSERVER05;Initial Catalog=UrlShortenerWithOrleans;User ID=sa;Password=<--SNIP-->.	
+[2024-03-15 03:04:11.614 GMT 35	Information	100604	Orleans.Runtime.MembershipService.MembershipAgent]	-BecomeActive	
+[2024-03-15 03:04:11.614 GMT 10	Information	100605	Orleans.Runtime.MembershipService.MembershipAgent]	-Finished BecomeActive.	
+[2024-03-15 03:04:11.614 GMT 28	Information	0	Orleans.Hosting.SiloHostedService]	Orleans Silo started.	
+[2024-03-15 03:04:11.614 GMT 28	Information	0	Microsoft.Hosting.Lifetime]	Application started. Press Ctrl+C to shut down.	
+[2024-03-15 03:04:11.614 GMT 28	Information	0	Microsoft.Hosting.Lifetime]	Hosting environment: Development	
+[2024-03-15 03:04:11.614 GMT 28	Information	0	Microsoft.Hosting.Lifetime]	Content root path: C:\Projects\UrlShortenerWithOrleans\tests\AcceptenceTests\bin\Debug\net8.0\	
+[2024-03-15 03:04:11.901 GMT 35	Information	101301	Orleans.Runtime.Messaging.Gateway]	Recorded opened connection from endpoint 127.0.0.1:25167, client ID sys.client/ede25ab85634407aa2da573413daa899.	
+[2024-03-15 03:04:11.966 GMT 29	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Establishing connection to endpoint S127.0.0.1:27800:69476651	
+[2024-03-15 03:04:11.968 GMT 34	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connected to endpoint S127.0.0.1:27800:69476651	
+[2024-03-15 03:04:11.969 GMT 34	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connection [Local: 127.0.0.1:20500, Remote: 127.0.0.1:27800, ConnectionId: 0HN24JIBG93A1] established with S127.0.0.1:27800:69476651	
+[2024-03-15 03:04:11.970 GMT 34	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connection [Local: 127.0.0.1:20500, Remote: 127.0.0.1:27800, ConnectionId: 0HN24JIBG93A1] established with S127.0.0.1:27800:69476651	
+[2024-03-15 03:04:12.155 GMT 27	Information	200411	Orleans.Storage.AdoNetGrainStorage]	Null grain state read (default will be instantiated): ServiceId=85160ae63b054843bc5cbc0c7a572510 ProviderName=urls GrainType=url GrainId=d8d98f93-ce8e-4823-8c84-daf5670e2b96 ETag=(null).	
+[2024-03-15 03:04:12.190 GMT 32	Information	200411	Orleans.Storage.AdoNetGrainStorage]	Null grain state read (default will be instantiated): ServiceId=85160ae63b054843bc5cbc0c7a572510 ProviderName=urls GrainType=url GrainId=3f94fae7-2067-4acf-854c-8e46cdd708c6 ETag=(null).	
+[2024-03-15 03:04:12.237 GMT 29	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Closing connection [Local: 127.0.0.1:40056, Remote: 127.0.0.1:25167, ConnectionId: 0HN24JIBG93A2]	
+[2024-03-15 03:04:12.238 GMT 33	Information	101302	Orleans.Runtime.Messaging.Gateway]	Recorded closed socket from endpoint 127.0.0.1:25167, client ID sys.client/ede25ab85634407aa2da573413daa899.	
+[2024-03-15 03:04:12.239 GMT 34	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connection [Local: 127.0.0.1:40056, Remote: 127.0.0.1:25167, ConnectionId: 0HN24JIBG93A2] terminated	
+[2024-03-15 03:04:12.262 GMT 27	Information	0	Microsoft.Hosting.Lifetime]	Application is shutting down...	
+[2024-03-15 03:04:12.262 GMT 27	Information	0	Orleans.Hosting.SiloHostedService]	Stopping Orleans Silo	
+[2024-03-15 03:04:19.313 GMT 33	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Closing connection [Local: 127.0.0.1:20500, Remote: 127.0.0.1:27800, ConnectionId: 0HN24JIBG93A1]	
+[2024-03-15 03:04:19.332 GMT 30	Information	0	Orleans.Hosting.SiloHostedService]	Orleans Silo stopped.	

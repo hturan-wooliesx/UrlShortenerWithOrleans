@@ -1,0 +1,6 @@
+﻿[2024-03-01 03:49:30.666 GMT 7	Information	100404	Orleans.Runtime.Silo]	Silo starting with GC settings: ServerGC=False GCLatencyMode=Interactive	
+[2024-03-01 03:49:30.667 GMT 7	Warning	100405	Orleans.Runtime.Silo]	Note: Silo not running with ServerGC turned on - recommend checking app config : <configuration>-<runtime>-<gcServer enabled="true">	
+[2024-03-01 03:49:30.667 GMT 7	Warning	100405	Orleans.Runtime.Silo]	Note: ServerGC only kicks in on multi-core systems (settings enabling ServerGC have no effect on single-core machines).	
+[2024-03-01 03:49:30.667 GMT 7	Information	100403	Orleans.Runtime.Silo]	-------------- Initializing silo on host A407SO235BW2W MachineName A407SO235BW2W at 127.0.0.1:24710, gen 68269770 --------------	
+[2024-03-01 03:49:30.667 GMT 7	Information	100415	Orleans.Runtime.Silo]	Starting silo Primary	
+[2024-03-01 03:49:30.699 GMT 7	Information	100422	Orleans.Runtime.Silo]	-------------- Started silo S127.0.0.1:24710:68269770, ConsistentHashCode 7B4EFE18 --------------	

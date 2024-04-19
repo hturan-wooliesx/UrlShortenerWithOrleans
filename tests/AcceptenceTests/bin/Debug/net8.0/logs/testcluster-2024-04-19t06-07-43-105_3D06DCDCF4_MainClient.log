@@ -1,0 +1,47 @@
+﻿[2024-04-19 06:07:44.896 GMT 17	Information	100314	Orleans.OutsideRuntimeClient]	Starting Orleans client with runtime version "8.0.0. Commit Hash: 71b58f43e0530c5650f01d38c58fd5679762f61e+71b58f43e0530c5650f01d38c58fd5679762f61e (Release).", local address C100.64.0.2:0:-72511664 and client id sys.client/6969205d08d048f7962fc20310360fdb	
+[2024-04-19 06:07:44.905 GMT 33	Information	101309	Orleans.Messaging.GatewayManager]	Found 2 gateways: [gwy.tcp://127.0.0.1:47345/0, gwy.tcp://127.0.0.1:47346/0]	
+[2024-04-19 06:07:44.921 GMT 34	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Establishing connection to endpoint S127.0.0.1:47345:0	
+[2024-04-19 06:07:44.921 GMT 30	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Establishing connection to endpoint S127.0.0.1:47346:0	
+[2024-04-19 06:07:44.939 GMT 39	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connected to endpoint S127.0.0.1:47346:0	
+[2024-04-19 06:07:44.939 GMT 31	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connected to endpoint S127.0.0.1:47345:0	
+[2024-04-19 06:07:44.970 GMT 30	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Established connection to S127.0.0.1:23375:72511663 with protocol version Version1	
+[2024-04-19 06:07:44.970 GMT 34	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Established connection to S127.0.0.1:23376:72511664 with protocol version Version1	
+[2024-04-19 06:07:44.975 GMT 31	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connection [Local: 127.0.0.1:20458, Remote: 127.0.0.1:47345, ConnectionId: 0HN306S3SF8GO] established with S127.0.0.1:47345:0	
+[2024-04-19 06:07:44.975 GMT 10	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connection [Local: 127.0.0.1:20458, Remote: 127.0.0.1:47346, ConnectionId: 0HN306S3SF8GP] established with S127.0.0.1:47346:0	
+[2024-04-19 06:07:45.049 GMT 41	Information	100929	Orleans.OutsideRuntimeClient]	Started client with address [GrainAddress GrainId sys.client/6969205d08d048f7962fc20310360fdb, ActivationId: @7858789a0a034488ac57b5bf0211275a, SiloAddress: C100.64.0.2:0:-72511664] and id sys.client/6969205d08d048f7962fc20310360fdb	
+[2024-04-19 06:07:45.051 GMT 41	Information	0	Orleans.ClientOptionsLogger]	Configuration Orleans.Configuration.ClientMessagingOptions: 
+ClientSenderBuckets: 8192
+PreferredFamily: InterNetwork
+NetworkInterfaceName: 
+LocalAddress: 
+ResponseTimeout: 00:30:00
+ResponseTimeoutWithDebugger: 00:30:00
+DropExpiredMessages: True
+MaxMessageHeaderSize: 10485760
+MaxMessageBodySize: 104857600
+	
+[2024-04-19 06:07:45.051 GMT 41	Information	0	Orleans.ClientOptionsLogger]	Configuration Orleans.Configuration.ClusterOptions: 
+ClusterId: testcluster-2024-04-19t06-07-43-105
+ServiceId: 5aed0f038b114800be57f2b06953f82e
+	
+[2024-04-19 06:07:45.051 GMT 41	Information	0	Orleans.ClientOptionsLogger]	Configuration Orleans.Configuration.ConnectionOptions: 
+ProtocolVersion: Version1
+ConnectionsPerEndpoint: 1
+ConnectionRetryDelay: 00:00:01
+OpenConnectionTimeout: 00:00:05
+	
+[2024-04-19 06:07:45.051 GMT 41	Information	0	Orleans.ClientOptionsLogger]	Configuration Orleans.Configuration.StaticGatewayListProviderOptions: 
+Gateways.0: gwy.tcp://127.0.0.1:47345/0
+Gateways.1: gwy.tcp://127.0.0.1:47346/0
+	
+[2024-04-19 06:07:45.051 GMT 41	Information	0	Microsoft.Hosting.Lifetime]	Application started. Press Ctrl+C to shut down.	
+[2024-04-19 06:07:45.051 GMT 41	Information	0	Microsoft.Hosting.Lifetime]	Hosting environment: Development	
+[2024-04-19 06:07:45.051 GMT 41	Information	0	Microsoft.Hosting.Lifetime]	Content root path: C:\Projects\UrlShortenerWithOrleans\tests\AcceptenceTests\bin\Debug\net8.0\	
+[2024-04-19 06:08:57.021 GMT 32	Information	0	Orleans.OutsideRuntimeClient]	Received status update for unknown request. Message: Status Response [S127.0.0.1:47345:0 urlshortener/test]->[ sys.client/6969205d08d048f7962fc20310360fdb] IsExecuting: True, IsWaiting: False, Diagnostics: [[Activation: S127.0.0.1:23375:72511663/urlshortener/test@1f9833fa8d2f42b9b2e29a54edd457e2 #GrainType=UrlShortenerWithOrleans.Grains.UrlShortenerGrain,UrlShortenerWithOrleans Placement=RandomPlacement State=Valid NonReentrancyQueueSize=0 NumRunning=1 IdlenessTimeSpan=00:00:00 CollectionAgeLimit=00:15:00], TaskScheduler status: WorkItemGroup:Name=[Activation: S127.0.0.1:23375:72511663/urlshortener/test@1f9833fa8d2f42b9b2e29a54edd457e2#GrainType=UrlShortenerWithOrleans.Grains.UrlShortenerGrain,UrlShortenerWithOrleans Placement=RandomPlacement State=Valid],WorkGroupStatus=Running. Currently QueuedWorkItems=0; Total Enqueued=5; Total processed=4;  Executing Task Id=1055 Status=Running for 00:00:30.3910000.TaskRunner=ActivationTaskScheduler-26:Queued=0; Detailed context=<[Activation: S127.0.0.1:23375:72511663/urlshortener/test@1f9833fa8d2f42b9b2e29a54edd457e2 #GrainType=UrlShortenerWithOrleans.Grains.UrlShortenerGrain,UrlShortenerWithOrleans Placement=RandomPlacement State=Valid NonReentrancyQueueSize=0 NumRunning=1 IdlenessTimeSpan=00:00:00 CollectionAgeLimit=00:15:00 CurrentlyExecuting=Request [S127.0.0.1:23375:72511663 sys.client/6969205d08d048f7962fc20310360fdb]->[S127.0.0.1:23375:72511663 urlshortener/test] UrlShortenerWithOrleans.Interfaces.IUrlShortenerGrain[(UrlShortenerWithOrleans.Interfaces.IUrlShortenerGrain)UrlShortenerWithOrleans.Grains.UrlShortenerGrain].SetUrl(test-full-url.com) #16]>, Message Request [S127.0.0.1:23375:72511663 sys.client/6969205d08d048f7962fc20310360fdb]->[S127.0.0.1:23375:72511663 urlshortener/test] UrlShortenerWithOrleans.Interfaces.IUrlShortenerGrain[(UrlShortenerWithOrleans.Interfaces.IUrlShortenerGrain)UrlShortenerWithOrleans.Grains.UrlShortenerGrain].SetUrl(test-full-url.com) #16 was enqueued 00:00:30.3750000 ago and has now been executing for 00:00:30.3750000.] #16. Status: [Activation: S127.0.0.1:23375:72511663/urlshortener/test@1f9833fa8d2f42b9b2e29a54edd457e2 #GrainType=UrlShortenerWithOrleans.Grains.UrlShortenerGrain,UrlShortenerWithOrleans Placement=RandomPlacement State=Valid NonReentrancyQueueSize=0 NumRunning=1 IdlenessTimeSpan=00:00:00 CollectionAgeLimit=00:15:00]
+TaskScheduler status: WorkItemGroup:Name=[Activation: S127.0.0.1:23375:72511663/urlshortener/test@1f9833fa8d2f42b9b2e29a54edd457e2#GrainType=UrlShortenerWithOrleans.Grains.UrlShortenerGrain,UrlShortenerWithOrleans Placement=RandomPlacement State=Valid],WorkGroupStatus=Running. Currently QueuedWorkItems=0; Total Enqueued=5; Total processed=4;  Executing Task Id=1055 Status=Running for 00:00:30.3910000.TaskRunner=ActivationTaskScheduler-26:Queued=0; Detailed context=<[Activation: S127.0.0.1:23375:72511663/urlshortener/test@1f9833fa8d2f42b9b2e29a54edd457e2 #GrainType=UrlShortenerWithOrleans.Grains.UrlShortenerGrain,UrlShortenerWithOrleans Placement=RandomPlacement State=Valid NonReentrancyQueueSize=0 NumRunning=1 IdlenessTimeSpan=00:00:00 CollectionAgeLimit=00:15:00 CurrentlyExecuting=Request [S127.0.0.1:23375:72511663 sys.client/6969205d08d048f7962fc20310360fdb]->[S127.0.0.1:23375:72511663 urlshortener/test] UrlShortenerWithOrleans.Interfaces.IUrlShortenerGrain[(UrlShortenerWithOrleans.Interfaces.IUrlShortenerGrain)UrlShortenerWithOrleans.Grains.UrlShortenerGrain].SetUrl(test-full-url.com) #16]>
+Message Request [S127.0.0.1:23375:72511663 sys.client/6969205d08d048f7962fc20310360fdb]->[S127.0.0.1:23375:72511663 urlshortener/test] UrlShortenerWithOrleans.Interfaces.IUrlShortenerGrain[(UrlShortenerWithOrleans.Interfaces.IUrlShortenerGrain)UrlShortenerWithOrleans.Grains.UrlShortenerGrain].SetUrl(test-full-url.com) #16 was enqueued 00:00:30.3750000 ago and has now been executing for 00:00:30.3750000.	
+[2024-04-19 06:08:57.052 GMT 16	Information	0	Microsoft.Hosting.Lifetime]	Application is shutting down...	
+[2024-04-19 06:08:57.054 GMT 16	Information	0	Orleans.ClusterClient]	Client shutting down	
+[2024-04-19 06:08:57.060 GMT 46	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Closing connection [Local: 127.0.0.1:20458, Remote: 127.0.0.1:47345, ConnectionId: 0HN306S3SF8GO]	
+[2024-04-19 06:08:57.060 GMT 46	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Closing connection [Local: 127.0.0.1:20458, Remote: 127.0.0.1:47346, ConnectionId: 0HN306S3SF8GP]	
+[2024-04-19 06:08:57.119 GMT 34	Information	0	Orleans.ClusterClient]	Client shutdown completed	

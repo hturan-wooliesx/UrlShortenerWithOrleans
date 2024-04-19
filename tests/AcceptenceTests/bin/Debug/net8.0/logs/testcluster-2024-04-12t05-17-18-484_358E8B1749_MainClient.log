@@ -1,0 +1,44 @@
+﻿[2024-04-12 05:17:19.454 GMT 17	Information	100314	Orleans.OutsideRuntimeClient]	Starting Orleans client with runtime version "8.0.0. Commit Hash: 71b58f43e0530c5650f01d38c58fd5679762f61e+71b58f43e0530c5650f01d38c58fd5679762f61e (Release).", local address C100.64.0.2:0:-71903839 and client id sys.client/060ae8201b08418eb1f267c88239fcbf	
+[2024-04-12 05:17:19.465 GMT 35	Information	101309	Orleans.Messaging.GatewayManager]	Found 2 gateways: [gwy.tcp://127.0.0.1:44765/0, gwy.tcp://127.0.0.1:44766/0]	
+[2024-04-12 05:17:19.474 GMT 32	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Establishing connection to endpoint S127.0.0.1:44766:0	
+[2024-04-12 05:17:19.474 GMT 35	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Establishing connection to endpoint S127.0.0.1:44765:0	
+[2024-04-12 05:17:19.482 GMT 29	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connected to endpoint S127.0.0.1:44766:0	
+[2024-04-12 05:17:19.482 GMT 30	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connected to endpoint S127.0.0.1:44765:0	
+[2024-04-12 05:17:19.506 GMT 35	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Established connection to S127.0.0.1:25606:71903839 with protocol version Version1	
+[2024-04-12 05:17:19.506 GMT 32	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Established connection to S127.0.0.1:25605:71903838 with protocol version Version1	
+[2024-04-12 05:17:19.510 GMT 38	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connection [Local: 127.0.0.1:51629, Remote: 127.0.0.1:44765, ConnectionId: 0HN2QLV9P43EO] established with S127.0.0.1:44765:0	
+[2024-04-12 05:17:19.510 GMT 36	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connection [Local: 127.0.0.1:51629, Remote: 127.0.0.1:44766, ConnectionId: 0HN2QLV9P43EP] established with S127.0.0.1:44766:0	
+[2024-04-12 05:17:19.573 GMT 35	Information	100929	Orleans.OutsideRuntimeClient]	Started client with address [GrainAddress GrainId sys.client/060ae8201b08418eb1f267c88239fcbf, ActivationId: @7ccc6e2b822a455ca52a75119954f34c, SiloAddress: C100.64.0.2:0:-71903839] and id sys.client/060ae8201b08418eb1f267c88239fcbf	
+[2024-04-12 05:17:19.575 GMT 35	Information	0	Orleans.ClientOptionsLogger]	Configuration Orleans.Configuration.ClientMessagingOptions: 
+ClientSenderBuckets: 8192
+PreferredFamily: InterNetwork
+NetworkInterfaceName: 
+LocalAddress: 
+ResponseTimeout: 00:30:00
+ResponseTimeoutWithDebugger: 00:30:00
+DropExpiredMessages: True
+MaxMessageHeaderSize: 10485760
+MaxMessageBodySize: 104857600
+	
+[2024-04-12 05:17:19.575 GMT 35	Information	0	Orleans.ClientOptionsLogger]	Configuration Orleans.Configuration.ClusterOptions: 
+ClusterId: testcluster-2024-04-12t05-17-18-484
+ServiceId: b484f5bf34f84656af34c1ce074e1052
+	
+[2024-04-12 05:17:19.575 GMT 35	Information	0	Orleans.ClientOptionsLogger]	Configuration Orleans.Configuration.ConnectionOptions: 
+ProtocolVersion: Version1
+ConnectionsPerEndpoint: 1
+ConnectionRetryDelay: 00:00:01
+OpenConnectionTimeout: 00:00:05
+	
+[2024-04-12 05:17:19.575 GMT 35	Information	0	Orleans.ClientOptionsLogger]	Configuration Orleans.Configuration.StaticGatewayListProviderOptions: 
+Gateways.0: gwy.tcp://127.0.0.1:44765/0
+Gateways.1: gwy.tcp://127.0.0.1:44766/0
+	
+[2024-04-12 05:17:19.575 GMT 35	Information	0	Microsoft.Hosting.Lifetime]	Application started. Press Ctrl+C to shut down.	
+[2024-04-12 05:17:19.576 GMT 35	Information	0	Microsoft.Hosting.Lifetime]	Hosting environment: Development	
+[2024-04-12 05:17:19.576 GMT 35	Information	0	Microsoft.Hosting.Lifetime]	Content root path: C:\Projects\UrlShortenerWithOrleans\tests\AcceptenceTests\bin\Debug\net8.0\	
+[2024-04-12 05:17:28.435 GMT 16	Information	0	Microsoft.Hosting.Lifetime]	Application is shutting down...	
+[2024-04-12 05:17:28.436 GMT 16	Information	0	Orleans.ClusterClient]	Client shutting down	
+[2024-04-12 05:17:28.440 GMT 31	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Closing connection [Local: 127.0.0.1:51629, Remote: 127.0.0.1:44765, ConnectionId: 0HN2QLV9P43EO]	
+[2024-04-12 05:17:28.440 GMT 31	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Closing connection [Local: 127.0.0.1:51629, Remote: 127.0.0.1:44766, ConnectionId: 0HN2QLV9P43EP]	
+[2024-04-12 05:17:28.463 GMT 29	Information	0	Orleans.ClusterClient]	Client shutdown completed	

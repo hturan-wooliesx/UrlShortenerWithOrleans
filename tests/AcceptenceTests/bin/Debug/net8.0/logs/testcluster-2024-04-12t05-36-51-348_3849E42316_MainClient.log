@@ -1,0 +1,11 @@
+﻿[2024-04-12 05:36:52.757 GMT 17	Information	100314	Orleans.OutsideRuntimeClient]	Starting Orleans client with runtime version "8.0.0. Commit Hash: 71b58f43e0530c5650f01d38c58fd5679762f61e+71b58f43e0530c5650f01d38c58fd5679762f61e (Release).", local address C100.64.0.2:0:-71905012 and client id sys.client/4d3f6375bdf64dd7a8dd989baf205f17	
+[2024-04-12 05:36:52.763 GMT 30	Information	101309	Orleans.Messaging.GatewayManager]	Found 2 gateways: [gwy.tcp://127.0.0.1:42920/0, gwy.tcp://127.0.0.1:42921/0]	
+[2024-04-12 05:36:52.770 GMT 37	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Establishing connection to endpoint S127.0.0.1:42921:0	
+[2024-04-12 05:36:52.770 GMT 32	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Establishing connection to endpoint S127.0.0.1:42920:0	
+[2024-04-12 05:36:52.779 GMT 39	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connected to endpoint S127.0.0.1:42921:0	
+[2024-04-12 05:36:52.779 GMT 33	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connected to endpoint S127.0.0.1:42920:0	
+[2024-04-12 05:36:52.809 GMT 32	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Established connection to S127.0.0.1:28306:71905012 with protocol version Version1	
+[2024-04-12 05:36:52.809 GMT 37	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Established connection to S127.0.0.1:28305:71905011 with protocol version Version1	
+[2024-04-12 05:36:52.815 GMT 30	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connection [Local: 127.0.0.1:40775, Remote: 127.0.0.1:42920, ConnectionId: 0HN2QMA7EKECF] established with S127.0.0.1:42920:0	
+[2024-04-12 05:36:52.815 GMT 36	Information	0	Orleans.Runtime.Messaging.NetworkingTrace]	Connection [Local: 127.0.0.1:40775, Remote: 127.0.0.1:42921, ConnectionId: 0HN2QMA7EKECG] established with S127.0.0.1:42921:0	
+[2024-04-12 05:36:52.894 GMT 31	Information	100929	Orleans.OutsideRuntimeClient]	Started client with address [GrainAddress GrainId sys.client/4d3f6375bdf64dd7a8dd989baf205f17, ActivationId: @15f2792654c844dd96ff520c4d7a0c08, SiloAddress: C100.64.0.2:0:-71905012] and id sys.client/4d3f6375bdf64dd7a8dd989baf205f17	
