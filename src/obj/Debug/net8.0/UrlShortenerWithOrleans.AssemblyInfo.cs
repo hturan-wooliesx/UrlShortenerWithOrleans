@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UrlShortenerWithOrleans")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d366f9c69b1738ea28a67d5b7f4ec68048fabfd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa03df505d1d75398e96dfed67c8f448d47e898a")]
 [assembly: System.Reflection.AssemblyProductAttribute("UrlShortenerWithOrleans")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UrlShortenerWithOrleans")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
